@@ -20,3 +20,18 @@ const artists = [
         dob: "December 13, 1989"
     }
 ];
+
+window.onload = function () {
+    const tableBody = document.getElementById("tableBody");
+
+    artists.forEach(function (artist) {
+        let row = `
+      <tr>
+        <td>${artist.name}</td>
+        <td>${artist.bestSong}</td>
+        <td>${artist.dob}</td>
+      </tr>
+    `;
+        tableBody.innerHTML += row;
+    });
+};

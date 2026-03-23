@@ -21,10 +21,10 @@ const artists = [
     }
 ];
 
-window.onload = function () {
+window.onload = function artistsList() {
     const tableBody = document.getElementById("tableBody");
 
-    artists.forEach(function (artist) {
+    artists.forEach(function artistsList(artist) {
         let row = `
       <tr>
         <td>${artist.name}</td>
